@@ -2,33 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ravi Raja Masala | Since 2000</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
   font-family:'Poppins',sans-serif;
   background:#fafafa;
   color:#222;
 }
 
-a{text-decoration:none}
-
-/* HERO SECTION */
+/* ---------- HERO ---------- */
 .hero{
   min-height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('event01.jpeg') center/cover no-repeat;
-  color:#fff;
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url("shop image01.jpeg") center/cover no-repeat;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -36,81 +28,82 @@ a{text-decoration:none}
   padding:20px;
 }
 
+.hero img{
+  width:160px;              /* LOGO SIZE INCREASED */
+  height:160px;
+  border-radius:50%;        /* CIRCLE LOGO */
+  background:#fff;
+  padding:10px;
+  margin-bottom:15px;
+}
+
 .hero h1{
-  font-size:44px;
-  font-weight:700;
+  color:#fff;
+  font-size:36px;
+  margin-bottom:10px;
 }
 
 .hero p{
-  margin:15px 0;
-  font-size:18px;
+  color:#eee;
+  margin-bottom:20px;
 }
 
-.hero .btns a{
+.btns a{
   display:inline-block;
-  margin:10px;
-  padding:14px 30px;
+  margin:8px;
+  padding:12px 22px;
   border-radius:30px;
-  background:#ffb703;
+  background:#fcbf00;
   color:#000;
   font-weight:600;
+  text-decoration:none;
 }
 
-.hero .btns a:nth-child(3){
-  background:#E1306C;
+.btns a.instagram{
+  background:#e1306c;
   color:#fff;
 }
 
-/* SECTIONS */
+/* ---------- SECTIONS ---------- */
 section{
-  max-width:1200px;
+  padding:60px 20px;
+  max-width:1100px;
   margin:auto;
-  padding:70px 20px;
 }
 
 h2{
   text-align:center;
-  font-size:32px;
-  margin-bottom:25px;
+  margin-bottom:15px;
+  font-size:30px;
 }
 
-.center{text-align:center}
+.subtitle{
+  text-align:center;
+  margin-bottom:40px;
+  color:#555;
+}
 
-/* PRODUCTS */
+/* ---------- PRODUCTS ---------- */
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px;
-  text-align:center;
+  gap:20px;
 }
 
 .product{
   background:#fff;
   padding:15px;
   border-radius:12px;
-  border:2px solid #ffb703;   /* BORDER ADDED */
-  box-shadow:0 6px 15px rgba(0,0,0,0.08);
+  border:2px solid #fcbf00;     /* BORDER ADDED */
+  text-align:center;
   font-weight:600;
 }
 
-.product:hover{
-  transform:translateY(-5px);
-  transition:0.3s ease;
-}
-
-/* HIGHLIGHT */
-.highlight{
-  background:#fff3cd;
-  border-left:6px solid #ffb703;
-  padding:50px 20px;
-  margin:40px 0;
-}
-
-/* GALLERY */
+/* ---------- GALLERY ---------- */
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
 }
 
 .gallery img{
@@ -118,35 +111,40 @@ h2{
   border-radius:12px;
 }
 
-/* CONTACT */
-.contact{
+/* ---------- FOOTER ---------- */
+footer{
   background:#000;
   color:#fff;
-  padding:60px 20px;
   text-align:center;
+  padding:30px 20px;
 }
 
-.contact a{
-  color:#ffb703;
-  font-weight:600;
+footer a{
+  color:#fcbf00;
+  text-decoration:none;
 }
 
-/* FLOAT BUTTONS */
+/* ---------- FLOAT BUTTONS ---------- */
 .float{
   position:fixed;
   right:20px;
   bottom:20px;
-  background:#25d366;
-  color:#fff;
-  padding:14px 18px;
-  border-radius:50px;
-  font-weight:600;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
 
-.call{
-  bottom:80px;
-  background:#0b5ed7;
+.float a{
+  padding:12px 18px;
+  border-radius:25px;
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+  text-align:center;
 }
+
+.call{background:#007bff}
+.whatsapp{background:#25D366}
 </style>
 </head>
 
@@ -155,48 +153,49 @@ h2{
 <!-- HERO -->
 <div class="hero">
   <div>
-    <img src="logo.jpeg"
-      style="
-        width:160px;      /* LOGO SIZE INCREASED */
-        height:160px;
-        border-radius:50%;
-        background:#fff;
-        padding:12px;
-        margin-bottom:25px;
-      ">
+    <img src="logo.jpeg" alt="Ravi Raja Masala">
     <h1>Ravi Raja Masala</h1>
-    <p>25 Years of Trusted Taste – Since 2000</p>
+    <p>25 Years of Trusted Taste — Since 2000</p>
 
     <div class="btns">
       <a href="tel:9290737446">Call Now</a>
-      <a href="https://wa.me/919290737446">WhatsApp</a>
-      <a href="https://www.instagram.com/ravirajamashala" target="_blank">
-        Instagram
-      </a>
+      <a href="https://wa.me/919290737446" class="whatsapp">WhatsApp</a>
+      <a href="https://www.instagram.com/ravirajamashala" class="instagram">Instagram</a>
     </div>
   </div>
 </div>
 
 <!-- ABOUT SHOP FIRST -->
 <section>
-  <h2>Our Shop Journey</h2>
-  <div class="gallery">
-    <img src="shop image01.jpeg">
-    <img src="shop image02.jpeg">
-    <img src="shop image old.jpeg">
-  </div>
-  <p class="center">
-    <b>Our Shop – 2012–2015</b><br>
-    Same taste, same quality, same secret masala since 2000.
+  <h2>About Our Shop</h2>
+  <p class="subtitle">
+    25 Years of Ravi Raja Masala. Since 2000, the signature taste of Machilipatnam.
   </p>
+
+  <div class="gallery">
+    <img src="shop image old.jpeg" alt="Shop 2015">
+    <img src="shop image01.jpeg" alt="Shop">
+    <img src="shop image02.jpeg" alt="Shop">
+  </div>
+</section>
+
+<!-- ITEMS -->
+<section>
+  <h2>Our Special Items</h2>
+  <div class="products">
+    <div class="product">Masala Mixture</div>
+    <div class="product">Hot Mixture</div>
+    <div class="product">Boondi</div>
+    <div class="product">Chakodi</div>
+  </div>
 </section>
 
 <!-- EVENTS SECOND -->
-<section class="highlight">
-  <h2>Marriage & Party Event Orders — Since 2008</h2>
-  <p class="center">
-    We provide bulk snack items for marriages, parties & special events<br>
-    across India including <b>Delhi, Mumbai & Chennai</b>.
+<section style="background:#fff3cd">
+  <h2>Marriage & Party Events — Since 2008</h2>
+  <p class="subtitle">
+    Bulk snack supply for marriages, parties & events across India
+    <br><b>Delhi • Mumbai • Chennai</b>
   </p>
 
   <div class="gallery">
@@ -208,36 +207,18 @@ h2{
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section>
-  <h2>Our Masala Products</h2>
-  <div class="products">
-    <div class="product">Bajji Masala</div>
-    <div class="product">Undala Masala</div>
-    <div class="product">Mixer Masala</div>
-    <div class="product">Plain Tomato Masala</div>
-    <div class="product">Plain Egg Masala</div>
-    <div class="product">Plain Vankaya Masala</div>
-    <div class="product">Tomato Perugu Masala</div>
-    <div class="product">Egg Perugu Masala</div>
-    <div class="product">Vankaya Perugu Masala</div>
-    <div class="product">Bajji Perugu Masala</div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<div class="contact">
+<!-- FOOTER -->
+<footer>
   <p>📞 9290737446 | 8688650060</p>
   <p>📍 Revathi Center, Machilipatnam</p>
-  <p>
-    <a href="https://www.instagram.com/ravirajamashala">
-      Instagram: @ravirajamashala
-    </a>
-  </p>
-</div>
+  <p>Instagram: <a href="https://www.instagram.com/ravirajamashala">@ravirajamashala</a></p>
+</footer>
 
-<a class="float call" href="tel:9290737446">Call</a>
-<a class="float" href="https://wa.me/919290737446">WhatsApp</a>
+<!-- FLOAT BUTTONS -->
+<div class="float">
+  <a href="tel:9290737446" class="call">Call</a>
+  <a href="https://wa.me/919290737446" class="whatsapp">WhatsApp</a>
+</div>
 
 </body>
 </html>
